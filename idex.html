@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Портфолио Артёма</title>
+
+<style>
+
+body {
+background-color: #111;
+color: white;
+font-family: Arial;
+padding: 40px;
+max-width: 900px;
+margin: auto;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 40px;
+}
+
+nav a {
+margin-right: 20px;
+color: #00ffcc;
+text-decoration: none;
+font-weight: bold;
+}
+
+.card {
+background-color: #1e1e1e;
+padding: 30px;
+border-radius: 15px;
+text-align: center;
+margin-bottom: 60px;
+}
+
+.card img {
+width: 200px;
+border-radius: 15px;
+margin-bottom: 20px;
+}
+
+button {
+background-color: #00ffcc;
+border: none;
+padding: 12px 25px;
+font-size: 16px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+/* ПРОЕКТЫ */
+
+.projects {
+margin-top: 40px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+
+a.project {
+display: block;
+background-color: #1e1e1e;
+padding: 20px;
+border-radius: 10px;
+text-decoration: none;
+color: white;
+}
+
+a.project:hover {
+transform: translateY(-5px);
+background-color: #2a2a2a;
+transition: 0.3s;
+}
+@media (max-width: 600px) {
+
+header {
+flex-direction: column;
+gap: 20px;
+}
+
+.projects {
+grid-template-columns: 1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Артём</h1>
+
+<nav>
+<a href="#">Главная</a>
+<a href="#">Навыки</a>
+<a href="#">Проекты</a>
+</nav>
+
+</header>
+
+<div class="card">
+
+<img src="photo.jpg">
+
+<h2>Артём</h2>
+
+<p>
+Я начинающий frontend разработчик.  
+Учусь создавать красивые сайты и хочу работать удалённо.
+</p>
+
+<h3>Навыки</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript (изучаю)</li>
+</ul>
+
+<a href="https://youtube.com">
+<button>Мой любимый сайт</button>
+</a>
+
+</div>
+
+<section class="projects">
+
+<h2>Мои проекты</h2>
+
+<a href="index.html" class="project">
+<h3>Мой первый сайт</h3>
+<p>Мой первый сайт на HTML и CSS.</p>
+</a>
+
+<a href="landing.html" class="project">
+<h3>Landing Page</h3>
+<p>Простая продающая страница продукта.</p>
+</a>
+
+<a href="index.html" class="project">
+<h3>Портфолио разработчика</h3>
+<p>Мой сайт-портфолио с информацией обо мне.</p>
+</a>
+
+<a href="landing.html" class="project">
+<h3>Второй Landing</h3>
+<p>Ещё один лендинг.</p>
+</a>
+
+</section>
+
+</body>
+
+</html>
